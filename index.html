@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coder || Advance Thinking</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- swiper js cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="myCounter(), loader()">
+    <!-- preloader start -->
+    <div id="preloader"></div>
+    <!-- preloader end -->
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "100128116059633");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: "v14.0",
+            });
+        };
+
+        (function(d, s, id) {
+            var js,
+                fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- header starts here -->
+    <header id="header" class="position-fixed w-100 top-0">
+        <div class="container-fluid">
+            <nav class="inner_header d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="main_menu">
+                    <ul>
+                        <li><a class="menu_link active" href="#home">home</a></li>
+                        <li><a class="menu_link" href="#skill_area">about me</a></li>
+                        <li><a class="menu_link ext" href="#services">services</a></li>
+                        <li>
+                            <a class="menu_link ext" href="#achivements">achivements</a>
+                        </li>
+                        <li><a class="menu_link ext" href="#portfolio">portfolio</a></li>
+                        <li>
+                            <a class="menu_link" href="#testimonials">testimonials</a>
+                        </li>
+                        <li><a class="menu_link ext" href="#blogs">blogs</a></li>
+                        <li><a class="menu_link" href="#footer">contact us</a></li>
+                        <li><a href="#hire_me" class="hire_btn">hire me!</a></li>
+                    </ul>
+                </div>
+                <div onclick="myFunction()" class="menu_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- home section starts here -->
+    <section id="home">
+        <div class="container">
+            <div class="inner_hero">
+                <!-- <div class="d-flex align-items-center col-md-8 order-2 order-md-1"> -->
+                <div class="hero_content">
+                    <span class="name_indi">Hello, I am</span>
+                    <h1>Md. Minhaj Kobir</h1>
+                    <p>
+                        A Professional Web Developer And Student Of Computer Science &amp; Technology. I write code. I love programming. Programming is fun.
+                    </p>
+                    <a href="admin/cv.display.php" target="_blank"><button class="btn first_btn mb-4 me-4">Download CV</button></a
+            >
+            <a href="#portfolio"><button class="btn mb-4">my work</button></a>
+                </div>
+
+                <!-- <div class="hero_image col-md-4 order-1 order-md-2">
+                    <img src="images/MINHAJ.png" alt="banner_image" />
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- home section ends here -->
+
+    <!-- skill section starts here -->
+
+    <section id="skill_area">
+        <div class="container">
+            <div class="inner_skill row">
+                <div class="skill_image pe-xxl-5 col-md-6">
+                    <img src="images/skill.png" alt="skill_img" />
+                    <div class="experience_highlight">
+                        <div class="experience_content">
+                            <h3>06</h3>
+                            <h4>Years of</h4>
+                            <h4>Experience</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills ps-xxl-5 col-md-6">
+                    <h3>Read About My Life Struggle Story!</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et is the quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <ul class="skill_progress">
+                        <li class="wordpress">wordpress 90%</li>
+                        <li class="html">html 95%</li>
+                        <li class="css">css 85%</li>
+                        <li class="php">php 80%</li>
+                    </ul>
+                    <a href="#hire_me"><button class="btn me-4 mt-xl-5">Hire Me!</button></a
+            >
+            <button class="btn mt-xl-5">Aboute Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section ends here -->
+
+    <!-- service section starts here -->
+    <section id="services">
+      <div class="inner_service container vertical_path">
+        <div class="content">
+          <h2 class="heading">Our Services</h2>
+          <p class="para">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et is the
+            quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+        <div class="service_box row g-5">
+          <div class="serv_item col-xl-4 col-md-6">
+            <div>
+              <div class="icon">
+                <i class="fa-brands fa-wordpress"></i>
+              </div>
+              <div class="serv_name">Wordpress</div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="serv_item col-xl-4 col-md-6">
+            <div>
+              <div class="icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="serv_name">HTML</div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="serv_item col-xl-4 col-md-6">
+            <div>
+              <div class="icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="serv_name">Web Development</div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="serv_item col-xl-4 col-md-6">
+            <div>
+              <div class="icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="serv_name">CSS</div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="serv_item col-xl-4 col-md-6">
+            <div>
+              <div class="icon">
+                <i class="fab fa-php"></i>
+              </div>
+              <div class="serv_name">PHP</div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+          <div class="serv_item col-xl-4 col-md-6">
+            <div>
+              <div class="icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <div class="serv_name">Problem Solving</div>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 pt-5">
+          <a href="services.html"
+            ><button class="btn btn-success">view all</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- service section ends here -->
+
+    <!-- achivements section starts here -->
+    <section id="achivements">
+      <div class="container">
+        <div class="row g-5 text-capitalize text-center">
+          <div class="achive_item col-lg-3 col-sm-6">
+            <div class="h-100">
+              <h3>
+                <span class="counter" data-target="50">00</span><span>+</span>
+              </h3>
+              <h4>clients</h4>
+            </div>
+          </div>
+          <div class="achive_item col-lg-3 col-sm-6">
+            <div class="h-100">
+              <h3>
+                <span class="counter" data-target="68">00</span>
+              </h3>
+              <h4>projects</h4>
+            </div>
+          </div>
+          <div class="achive_item col-lg-3 col-sm-6">
+            <div class="h-100">
+              <h3>
+                <span class="counter" data-target="30">00</span>
+              </h3>
+              <h4>awards</h4>
+            </div>
+          </div>
+          <div class="achive_item col-lg-3 col-sm-6">
+            <div class="h-100">
+              <h3>
+                <span class="counter" data-target="06">00</span>
+              </h3>
+              <h4>years experience</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- achivements section ends here -->
+
+    <!-- portfolio section starts here -->
+    <section id="portfolio">
+      <div class="inner_portfolio container vertical_path">
+        <div class="content">
+          <h2 class="heading">Our Portfolio</h2>
+          <p class="para">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et is the
+            quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+
+        <div class="port_menu mt-5 mb-5">
+          <ul
+            class="p_cats d-md-flex justify-content-center align-items-center"
+          >
+            <li class="bottom_space">
+              <span class="p_cat active" data-filter="all">ALL</span>
+            </li>
+            <li class="">
+              <span class="p_cat" data-filter="development"
+                >Web Development</span
+              >
+            </li>
+            <li class=""><span class="p_cat" data-filter="html">HTML</span></li>
+            <li class=""><span class="p_cat" data-filter="ui">UI/UX</span></li>
+            <li><span class="p_cat" data-filter="design">Web Design</span></li>
+          </ul>
+        </div>
+
+        <div
+          class="port_items row g-5 justify-content-center align-items-center"
+        >
+          <div class="col-xl-4 col-md-6 port_single development display">
+            <div class="display">
+              <a href="#"
+                ><img src="images/port_item_1.png" alt="portfolio_image"
+              /></a>
+                    <div class="overlay_bg display">
+                        <div class="overlay_content display">
+                            <h3>Application Development</h3>
+                            <h4>HTML, CSS, jQuery</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.
+                            </p>
+                            <a href="https://minhaj06.github.io/systematic/" target="_blank">
+                                <button class="btn">Live preview</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 port_single html display">
+                <div class="display">
+                    <a href="#"><img src="images/port_item_2.png" alt="portfolio_image" /></a>
+                    <div class="overlay_bg display">
+                        <div class="overlay_content display">
+                            <h3>Application Development</h3>
+                            <h4>HTML, CSS, jQuery</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.
+                            </p>
+                            <a href="https://minhaj06.github.io/systematic/" target="_blank">
+                                <button class="btn">Live preview</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 port_single ui display">
+                <div class="display">
+                    <a href="#"><img src="images/port_item_3.png" alt="portfolio_image" /></a>
+                    <div class="overlay_bg display">
+                        <div class="overlay_content display">
+                            <h3>Application Development</h3>
+                            <h4>HTML, CSS, jQuery</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.
+                            </p>
+                            <a href="https://minhaj06.github.io/systematic/" target="_blank">
+                                <button class="btn">Live preview</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 port_single ui display">
+                <div class="display">
+                    <a href="#"><img src="images/port_item_4.png" alt="portfolio_image" /></a>
+                    <div class="overlay_bg display">
+                        <div class="overlay_content display">
+                            <h3>Application Development</h3>
+                            <h4>HTML, CSS, jQuery</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.
+                            </p>
+                            <a href="https://minhaj06.github.io/systematic/" target="_blank">
+                                <button class="btn">Live preview</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 port_single design display">
+                <div class="display">
+                    <a href="#"><img class="overlay_img" src="images/port_item_5.png" alt="portfolio_image" /></a>
+                    <div class="overlay_bg display">
+                        <div class="overlay_content display">
+                            <h3>Application Development</h3>
+                            <h4>HTML, CSS, jQuery</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.
+                            </p>
+                            <a href="https://minhaj06.github.io/systematic/" target="_blank">
+                                <button class="btn">Live preview</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 port_single design display">
+                <div class="display">
+                    <a href="#"><img src="images/port_item_6.png" alt="portfolio_image" /></a>
+                    <div class="overlay_bg display">
+                        <div class="overlay_content display">
+                            <h3>Application Development</h3>
+                            <h4>HTML, CSS, jQuery</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.
+                            </p>
+                            <a href="https://minhaj06.github.io/systematic/" target="_blank">
+                                <button class="btn">Live preview</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5 pt-5">
+            <a href="portfolio.html"><button class="btn">view all</button></a>
+        </div>
+        </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonials section starts here -->
+    <section id="testimonials">
+        <div class="inner_testimonials container vertical_path">
+            <div class="content">
+                <h2 class="heading">testimonials</h2>
+                <p class="para">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et is the quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+            </div>
+            <div class="testimonial_wrapper">
+                <div class="testimonial_slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial_single swiper-slide">
+                            <div class="slider_img">
+                                <a href=""><img src="images/slider_img_1.png" alt="testimonial_img" /></a>
+                            </div>
+                            <div class="slider_desc">
+                                <h3>John Doe</h3>
+                                <h4>CEO Abc Company</h4>
+                                <p class="para">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial_single swiper-slide">
+                            <div class="slider_img">
+                                <a href=""><img src="images/slider_img_2.png" alt="testimonial_img" /></a>
+                            </div>
+                            <div class="slider_desc">
+                                <h3>John Doe</h3>
+                                <h4>CEO Abc Company</h4>
+                                <p class="para">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial_single swiper-slide">
+                            <div class="slider_img">
+                                <a href=""><img src="images/slider_img_1.png" alt="testimonial_img" /></a>
+                            </div>
+                            <div class="slider_desc">
+                                <h3>John Doe</h3>
+                                <h4>CEO Abc Company</h4>
+                                <p class="para">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial_single swiper-slide">
+                            <div class="slider_img">
+                                <a href=""><img src="images/slider_img_2.png" alt="testimonial_img" /></a>
+                            </div>
+                            <div class="slider_desc">
+                                <h3>John Doe</h3>
+                                <h4>CEO Abc Company</h4>
+                                <p class="para">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next slide_btn"></div>
+                    <div class="swiper-button-prev slide_btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- <div class="pagination">
+                    <span></span>
+                    <span style="margin: 0 1rem; background-color: var(--orange)"></span>
+                    <span></span>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- testimonials ends starts here -->
+
+    <!-- hire_me section starts here -->
+
+    <section id="hire_me">
+        <div class="hire_me_content">
+            <div class="inner_hire container">
+                <div class="bg_overlay"></div>
+                <div class="hire_content">
+                    <h3>Have any Project in Mind?</h3>
+                    <h2 class="heading">I'm Available for Freelancing</h2>
+                    <button class="btn hire_button">hire me!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hire_me section ends here -->
+
+    <!-- blog section starts here -->
+    <section id="blogs">
+        <div class="inner_blog container vertical_path">
+            <div class="content">
+                <h2 class="heading">latest blog</h2>
+                <p class="para">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et is the quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+            </div>
+            <div class="blogs row g-5 mt-5">
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog_item">
+                        <img src="images/blog_1.png" alt="blog_img" />
+                        <div class="blog_content">
+                            <p class="para">26th October,2019</p>
+                            <h3>I Used The Web For A Day On A 50 MB Budget</h3>
+                            <a href="#">learn more<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog_item">
+                        <img src="images/blog_2.png" alt="blog_img" />
+                        <div class="blog_content">
+                            <p class="para">26th October,2019</p>
+                            <h3>I Used The Web For A Day On A 50 MB Budget</h3>
+                            <a href="#">learn more<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog_item">
+                        <img src="images/blog_1.png" alt="blog_img" />
+                        <div class="blog_content">
+                            <p class="para">26th October,2019</p>
+                            <h3>I Used The Web For A Day On A 50 MB Budget</h3>
+                            <a href="#">learn more<i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-5">
+                <a href="blog.html"><button class="btn">view all</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog section ends here -->
+
+    <!-- footer starts here -->
+
+    <footer id="footer">
+        <div class="footer container">
+            <div class="row g-5 mt-5">
+                <div class="footer_item col-xl-5 col-lg-6">
+                    <h2 class="heading">contact us</h2>
+                    <p class="para">
+                        Let's make something new, different and more meaningful or make thing more visual or conceptual?
+                    </p>
+                    <div class="icon_text">
+                        <div class="ft_icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h5>call me</h5>
+                            <h4>+123 456 7890</h4>
+                        </div>
+                    </div>
+                    <div class="icon_text">
+                        <div class="ft_icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h5>email</h5>
+                            <h4 style="word-break: break-all">
+                                milonmdminhajkobir@gmail.com
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="icon_text">
+                        <div class="ft_icon">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <div class="text">
+                            <h5>address</h5>
+                            <h4>27 Division St, New York, NY 10002, USA</h4>
+                        </div>
+                    </div>
+                    <h4 class="find_me">Find Me on</h4>
+                    <div class="social_icons">
+                        <span>
+                <i class="fab fa-behance"></i>
+              </span>
+                        <span>
+                <i class="fas fa-basketball-ball"></i>
+              </span>
+                        <span>
+                <i class="fab fa-instagram"></i>
+              </span>
+                        <span>
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+                        <span>
+                <i class="fab fa-pinterest"></i>
+              </span>
+                    </div>
+                </div>
+                <div class="footer_item col-xl-7 col-lg-6">
+                    <h2 class="heading">Drop a Line</h2>
+                    <form class="row g-5" action="">
+                        <div class="col-xl-6">
+                            <input type="text" name="name" placeholder="Name" />
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="phone" name="phone" placeholder="Phone" />
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text" placeholder="Budget" />
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea id="" cols="30" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copy_right">
+                <p class="para">Copyright ©2019Coder. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer ends here -->
+
+    <!-- Bootstrap Bundle with Propper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- swiper js cdn link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
