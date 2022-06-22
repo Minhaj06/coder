@@ -961,33 +961,29 @@ textarea {
     }
 }
 
-@media (max-width: 520px) {
-    #skill_area {
-        padding-bottom: 0;
-    }
-    .btn {
-        min-width: 18rem;
-    }
-    .experience_highlight {
-        bottom: -28rem;
-        width: calc(100% - 1.5rem);
-        left: auto;
-        margin: 0;
-    }
-    .skill_image {
-        margin-bottom: 30rem;
-    }
-}
-
 @media (max-width: 420px) {
     html {
         font-size: 55%;
+    }
+    
+    .btn {
+        min-width: 18rem;
     }
     .logo img {
         max-height: 6rem;
     }
     .main_menu {
         top: 5.5rem;
+    }
+        #skill_area {
+        padding-bottom: 0;
+    }
+        .experience_highlight {
+        position:relative;
+        display: flex;
+    }
+    .skill_image img {
+        height: auto;
     }
 }
 
