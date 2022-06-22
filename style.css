@@ -7,10 +7,12 @@ ul {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: all 0.3s linear;
 }
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 :root {
@@ -45,7 +47,6 @@ body {
 }
 
 section {
-    overflow: hidden;
     padding-top: 10rem;
 }
 
@@ -783,7 +784,6 @@ background-color: #ffbf0d;
 /* footer starts here */
 
 #footer {
-    overflow: hidden;
     padding-top: 10rem;
 }
 
