@@ -975,7 +975,13 @@ textarea {
     .main_menu {
         top: 5.5rem;
     }
-        #skill_area {
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+            #skill_area {
         padding-bottom: 0;
     }
         .experience_highlight {
@@ -984,12 +990,6 @@ textarea {
     }
     .skill_image img {
         height: auto;
-    }
-}
-
-@media (max-width: 375px) {
-    html {
-        font-size: 50%;
     }
 }
 @media (max-width: 300px) {
