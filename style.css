@@ -314,7 +314,7 @@ input#email {
     width: 17.8rem;
     height: 4rem;
     background-color: var(--white);
-    clip-path: polygon( 100% 0, 100% 100%, 15.9rem 100%, 15.9rem 0, 12.5rem 0, 12.5rem 100%, 10.6rem 100%, 10.6rem 0, 7.2rem 0, 7.2rem 100%, 5.3rem 100%, 5.3rem 0, 1.9rem 0, 1.9rem 100%, 0 100%, 0 0);
+    clip-path: polygon( 14rem 0, 14rem 100%, 12rem 100%, 12rem 0, 10rem 0, 10rem 100%, 8rem 100%, 8rem 0, 6rem 0, 6rem 100%, 4rem 100%, 4rem 0, 2rem 0, 2rem 100%, 0 100%, 0 0);
 }
 
 .skills p {
