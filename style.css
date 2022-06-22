@@ -984,9 +984,10 @@ textarea {
     #skill_area {
         padding-bottom: 0;
     }
-        .experience_highlight {
+    .experience_highlight {
         position:relative;
         display: flex;
+        width: 100%;
     }
     .skill_image img {
         height: auto;
